@@ -1,0 +1,35 @@
+pattern: [0-9]+
+text: I have 99999 chocolates
+word pattern detected
+99999
+no word pattern detected
+
+pattern: [a-z A-Z]+
+text: Chocolates
+word pattern detected
+Chocolates
+no word pattern detected
+
+pattern: [A-Z][a-z]+
+text: harshini
+no word pattern detected
+
+pattern: [aeiouAEIOU]+
+text: Handkerchief
+word pattern detected
+a
+e
+ie
+no word pattern detected
+
+pattern: [0-9]{2}-[0-9]{2}-[0-9]{4}
+text: 05-02-2004
+word pattern detected
+05-02-2004
+no word pattern detected
+
+pattern: [a-z 0-9]+@[a-z]+.com
+text: bharshini2004@gmail.com
+word pattern detected
+bharshini2004@gmail.com
+no word pattern detected
