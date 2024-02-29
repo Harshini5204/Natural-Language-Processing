@@ -1,14 +1,14 @@
 import nltk
+from nltk.tokenize import word_tokenize
+nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
-stop_words = set(stopwords.words('english'))
-txt = "Dark chocolate contains lots of antioxidants that help the cardiovascular system by reducing blood pressure." \
+def pos_tagging(text):
+ words = word_tokenize(text)
+ pos_tags = nltk.pos_tag(words)
+ return pos_tags
+example_text = "Dark chocolate contains lots of antioxidants that help the cardiovascular system by reducing blood pressure." \
       "Dark chocolate has more cacao and less sugar than other chocolates."
+pos_tags = pos_tagging(example_text)
+for word, pos_tag in pos_tags:
+ print(f"Word: {word}, POS Tag: {pos_tag}")
 
-tokenized = sent_tokenize(txt)
-for i in tokenized:
-    wordsList = nltk.word_tokenize(i)
-    wordsList = [w for w in wordsList if not w in stop_words]
-    tagged = nltk.pos_tag(wordsList)
-    print(tagged)
