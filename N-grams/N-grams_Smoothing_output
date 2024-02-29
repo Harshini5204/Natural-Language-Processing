@@ -1,0 +1,5 @@
+Trigram: ('I', 'like', 'to'), Probability: 0.3333
+Trigram: ('like', 'to', 'learn'), Probability: 0.3333
+Trigram: ('to', 'learn', 'NLP'), Probability: 0.3333
+Trigram: ('Coding', 'is', 'fun'), Probability: 0.3333
+Trigram: ('Programming', 'is', 'interesting'), Probability: 0.3333
